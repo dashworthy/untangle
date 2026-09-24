@@ -15,9 +15,17 @@ The `untangle` skill works in this order:
    mapped to a slice.
 6. Offers to build the stacked branches.
 
+## Install
+
+```
+/plugin marketplace add dashworthy/untangle
+/plugin install untangle@untangle
+```
+
 ## Layout
 
 ```
+.claude-plugin/                    plugin.json + marketplace.json
 skills/untangle/SKILL.md          workflow
 skills/untangle/references/       boundary traps, plan template, build steps
 skills/untangle/scripts/          check_coverage.py (every changed file mapped?)

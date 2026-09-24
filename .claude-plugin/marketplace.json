@@ -1,0 +1,17 @@
+{
+  "name": "untangle",
+  "owner": {
+    "name": "Andrew Leach",
+    "email": "andrew@leachcreative.com"
+  },
+  "metadata": {
+    "description": "Split oversized, spec-driven PRs into stacked slices that each ship safely."
+  },
+  "plugins": [
+    {
+      "name": "untangle",
+      "source": "./",
+      "description": "Untangle an oversized PR into a stack of smaller PRs: map dependencies, propose cut lines to accept or reject, dry-build each slice, and write a split plan."
+    }
+  ]
+}
