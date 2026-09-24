@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="untangle: split a mega PR into slices that each ship safely" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+<defs>
+<radialGradient id="glow" cx="50%" cy="0%" r="70%"><stop offset="0%" stop-color="#EC4899" stop-opacity="0.32"></stop><stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.12"></stop><stop offset="100%" stop-color="#0B1120" stop-opacity="0"></stop></radialGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EC4899"></stop><stop offset="100%" stop-color="#8B5CF6"></stop></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0 L0 0 0 48" fill="none" stroke="#1E293B" stroke-width="1"></path></pattern>
+</defs>
+<rect width="1200" height="400" fill="#0B1120"></rect>
+<rect width="1200" height="400" fill="url(#grid)" opacity="0.5"></rect>
+<rect width="1200" height="400" fill="url(#glow)"></rect>
+<rect x="772" y="70" width="84" height="190" rx="20" fill="#F472B6" fill-opacity="0.07" stroke="#F472B6" stroke-width="2" stroke-dasharray="6 6"></rect>
+<rect x="874" y="70" width="84" height="190" rx="20" fill="#E879F9" fill-opacity="0.07" stroke="#E879F9" stroke-width="2" stroke-dasharray="6 6"></rect>
+<rect x="976" y="70" width="84" height="190" rx="20" fill="#C084FC" fill-opacity="0.07" stroke="#C084FC" stroke-width="2" stroke-dasharray="6 6"></rect>
+<rect x="1078" y="70" width="84" height="190" rx="20" fill="#A78BFA" fill-opacity="0.07" stroke="#A78BFA" stroke-width="2" stroke-dasharray="6 6"></rect>
+<g stroke="#64748B" stroke-width="2" opacity="0.8">
+<path d="M800 110 L832 165"></path><path d="M832 165 L806 220"></path><path d="M800 110 L902 100"></path><path d="M832 165 L934 160"></path><path d="M806 220 L906 225"></path>
+<path d="M902 100 L934 160"></path><path d="M934 160 L906 225"></path><path d="M902 100 L1004 120"></path><path d="M934 160 L1036 180"></path><path d="M906 225 L1008 235"></path>
+<path d="M1004 120 L1036 180"></path><path d="M1036 180 L1008 235"></path><path d="M1004 120 L1106 140"></path><path d="M1036 180 L1134 205"></path><path d="M1008 235 L1134 205"></path><path d="M1106 140 L1134 205"></path>
+</g>
+<g fill="#0B1120" stroke-width="3">
+<circle cx="800" cy="110" r="9" stroke="#F472B6"></circle><circle cx="832" cy="165" r="9" stroke="#F472B6"></circle><circle cx="806" cy="220" r="9" stroke="#F472B6"></circle>
+<circle cx="902" cy="100" r="9" stroke="#E879F9"></circle><circle cx="934" cy="160" r="9" stroke="#E879F9"></circle><circle cx="906" cy="225" r="9" stroke="#E879F9"></circle>
+<circle cx="1004" cy="120" r="9" stroke="#C084FC"></circle><circle cx="1036" cy="180" r="9" stroke="#C084FC"></circle><circle cx="1008" cy="235" r="9" stroke="#C084FC"></circle>
+<circle cx="1106" cy="140" r="9" stroke="#A78BFA"></circle><circle cx="1134" cy="205" r="9" stroke="#A78BFA"></circle>
+</g>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="middle">
+<text x="814" y="288" font-size="13" fill="#94A3B8">slice 1</text><text x="814" y="310" font-size="15" fill="#34D399">✓ 41</text>
+<text x="916" y="288" font-size="13" fill="#94A3B8">slice 2</text><text x="916" y="310" font-size="15" fill="#34D399">✓ 55</text>
+<text x="1018" y="288" font-size="13" fill="#94A3B8">slice 3</text><text x="1018" y="310" font-size="15" fill="#34D399">✓ 63</text>
+<text x="1120" y="288" font-size="13" fill="#94A3B8">slice 4</text><text x="1120" y="310" font-size="15" fill="#34D399">✓ 71</text>
+</g>
+<text x="72" y="255" font-size="100" font-weight="800" letter-spacing="-0.04em" fill="url(#accent)">untangle</text>
+<text x="76" y="296" font-size="24" font-weight="400" fill="#94A3B8">Split a mega PR into slices that each ship safely.</text>
+<text x="1180" y="352" text-anchor="end" font-size="9" font-weight="800" font-style="italic" letter-spacing="0.02em" fill="#94A3B8">CRAFTED BY</text>
+<text x="1180" y="370" text-anchor="end" font-size="20" font-weight="900" font-style="italic" letter-spacing="-0.07em"><tspan fill="url(#accent)">DASHWORTHY</tspan></text>
+</svg>

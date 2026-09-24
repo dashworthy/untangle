@@ -1,5 +1,7 @@
 # untangle
 
+![untangle: split a mega PR into slices that each ship safely](art/banner.svg)
+
 A Claude Code plugin that splits an oversized, spec-driven PR into a stack of smaller
 PRs, each of which ships without breaking existing functionality.
 
