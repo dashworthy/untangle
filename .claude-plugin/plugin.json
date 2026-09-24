@@ -1,0 +1,11 @@
+{
+  "name": "untangle",
+  "description": "Untangle an oversized, spec-driven pull request into a stack of smaller PRs that each ship without breaking existing functionality: map the diff's dependencies, propose cut lines for the user to accept or reject, settle the order, write a split plan, and optionally build the stacked branches.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Andrew Leach",
+    "email": "7387639+andyleach@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "keywords": ["pull-requests", "code-review", "stacked-prs", "git", "splitting"]
+}

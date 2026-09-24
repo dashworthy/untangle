@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: split-multi-currency
+context:
+  scaffold_script: build-fixture.sh

@@ -1,0 +1,64 @@
+{
+  "skill_name": "untangle",
+  "evals": [
+    {
+      "id": 1,
+      "name": "split-multi-currency",
+      "prompt": "The feature/multi-currency branch got way too big to review. It was generated in one go from our multi-currency spec. Can you work out how to break it into smaller PRs we can ship one at a time without breaking anything that already works? Write the plan to split-plan.md in the repo root.",
+      "expected_output": "A stacked split plan based on develop (not main): vitest setup in or before the first slice with tests; money library early; cached-rate-converter.ts with or after the rates code despite living in src/lib/money; multi-currency invoices after rates; the Currencies nav link no earlier than its settings page; rate history as a follow-up. Boundaries were put to the user as a multi-select question.",
+      "files": [
+        "evals/split-multi-currency/build-fixture.sh"
+      ],
+      "expectations": [
+        "split-plan.md exists in the repo root",
+        "questions.jsonl contains a question with multiSelect true whose options are split boundaries",
+        "The plan uses develop as the base branch",
+        "cached-rate-converter.ts is placed in the same slice as src/rates or later, not with the money library ahead of rates",
+        "The vitest setup is placed in or before the first slice that contains tests",
+        "The Currencies nav entry ships no earlier than the currency settings page",
+        "The refresh-rates entry of config/jobs.json ships no earlier than src/jobs/refresh-rates.ts",
+        "The format.ts signature change ships in the same slice as the customers-page.tsx and invoices-page.tsx edits",
+        "The routes.ts rateConverter hunk and the server.ts app.locals.converter hunk land in the same slice",
+        "The response or plan reports at least one concrete defect in the branch itself, with a file reference",
+        "split-map.tsv passes check_coverage.py (every changed file mapped)",
+        "No branches, worktrees or pushes were created"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "split-team-workspaces",
+      "prompt": "feature/team-workspaces is ~2k lines and nobody wants to review it as one PR. find me the logical seams so we can land it in pieces, each one safe to merge on its own. put the plan in split-plan.md at the repo root pls",
+      "expected_output": "A stacked split plan based on main (ignoring the stale release/2.3 branch): generic audit log first; workspace_events.py with or after the Workspace model despite living in sprout/audit; migrations 0005/0006 no earlier than 0004; plant workspace scoping (existing-behavior change) isolated or clearly called out; invites and member activity as follow-ups; nav links no earlier than their pages. Boundaries put to the user as a multi-select question.",
+      "files": [
+        "evals/split-team-workspaces/build-fixture.sh"
+      ],
+      "expectations": [
+        "split-plan.md exists in the repo root",
+        "questions.jsonl contains a question with multiSelect true whose options are split boundaries",
+        "The plan uses main as the base branch",
+        "workspace_events.py is placed in the same slice as the Workspace model or later",
+        "Migrations 0005 and 0006 are not placed before 0004",
+        "The Workspaces and Activity nav links ship no earlier than the pages they link to",
+        "The sprout.workspaces.api:bp entry in config.py ships no earlier than sprout/workspaces/api.py",
+        "carelog/api.py and its tests ship in the same slice as the can()/Actor change",
+        "conftest.py is hunk-split so the invites imports and invite_token fixture ship no earlier than the invites code",
+        "The response or plan reports at least one concrete defect in the branch itself, with a file reference",
+        "split-map.tsv passes check_coverage.py (every changed file mapped)",
+        "No branches, worktrees or pushes were created"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "small-cohesive-change",
+      "prompt": "Can you split feature/paginate-books into smaller PRs so it's easier to review? If you write a plan, put it in split-plan.md at the repo root.",
+      "expected_output": "Recognizes a ~120-line cohesive change and recommends keeping it as one PR rather than manufacturing cuts.",
+      "files": [
+        "evals/small-cohesive-change/build-fixture.sh"
+      ],
+      "expectations": [
+        "The final response recommends keeping it as a single PR",
+        "No branches, worktrees or pushes were created"
+      ]
+    }
+  ]
+}
