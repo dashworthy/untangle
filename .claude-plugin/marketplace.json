@@ -1,8 +1,7 @@
 {
   "name": "untangle",
   "owner": {
-    "name": "Andrew Leach",
-    "email": "andrew@leachcreative.com"
+    "name": "Andrew Leach"
   },
   "metadata": {
     "description": "Split oversized, spec-driven PRs into stacked slices that each ship safely."
